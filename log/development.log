@@ -1,0 +1,1762 @@
+
+
+Started POST "/users" for ::1 at 2015-12-10 10:17:37 -0800
+
+ActiveRecord::NoDatabaseError (FATAL:  database "kidstarter_dev" does not exist
+):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb:652:in `rescue in connect'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb:642:in `connect'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb:211:in `initialize'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `retrieve_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_handling.rb:87:in `connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/migration.rb:504:in `connection'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/migration.rb:491:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:743:in `_run_call_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:90:in `run_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:48:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.2ms)
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1763980054046831985);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20151210181533)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151210181533"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1763980054046831985)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started POST "/users" for ::1 at 2015-12-10 10:18:10 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:259:in `const_get'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:259:in `block in constantize'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:257:in `each'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:257:in `inject'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:257:in `constantize'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/http/request.rb:86:in `controller_class'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:42:in `block in serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `each'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:713:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionview/lib/action_view/digestor.rb:14:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/etag.rb:25:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/conditional_get.rb:38:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/head.rb:12:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/query_cache.rb:36:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:963:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/migration.rb:498:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:743:in `_run_call_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:90:in `run_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:48:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.4ms)
+
+
+Started POST "/users" for ::1 at 2015-12-10 10:18:18 -0800
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:259:in `const_get'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:259:in `block in constantize'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:257:in `each'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:257:in `inject'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/inflector/methods.rb:257:in `constantize'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/http/request.rb:86:in `controller_class'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:42:in `block in serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `each'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:713:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionview/lib/action_view/digestor.rb:14:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/etag.rb:25:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/conditional_get.rb:38:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/head.rb:12:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/query_cache.rb:36:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:963:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/migration.rb:498:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:743:in `_run_call_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:90:in `run_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:48:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.2ms)
+
+
+Started POST "/users" for ::1 at 2015-12-10 10:19:06 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/abstract_controller/base.rb:123:in `process'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_controller/metal.rb:192:in `dispatch'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_controller/metal.rb:264:in `dispatch'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:48:in `dispatch'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:42:in `block in serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `each'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:713:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionview/lib/action_view/digestor.rb:14:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/etag.rb:25:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/conditional_get.rb:38:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/head.rb:12:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/query_cache.rb:36:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:963:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/migration.rb:498:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:743:in `_run_call_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:90:in `run_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:48:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (5.1ms)
+
+
+Started GET "/users" for ::1 at 2015-12-10 10:19:14 -0800
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant UsersController::Users):
+  app/controllers/users_controller.rb:3:in `index'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.9ms)
+
+
+Started GET "/users" for ::1 at 2015-12-10 10:19:28 -0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dphaener@gmail.com"], ["password_digest", "$2a$10$nAwjiGmt6wjQAcuNTpb6medIaayv9kiJtFEpqfiM9ZGdWilvQOhpa"], ["created_at", 2015-12-10 18:19:55 UTC], ["updated_at", 2015-12-10 18:19:55 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+
+
+Started GET "/users" for ::1 at 2015-12-10 10:20:01 -0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:41:45 -0800
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant QueriesController::Schema):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:43:55 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant QueryType):
+  app/graph/schema.rb:1:in `<top (required)>'
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.8ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:46:08 -0800
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant QueryType):
+  app/graph/schema.rb:1:in `<top (required)>'
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:46:21 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant QueryType):
+  app/graph/schema.rb:1:in `<top (required)>'
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.1ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:47:09 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant NodeIdentification):
+  app/graph/types/user_type.rb:4:in `block in <top (required)>'
+  app/graph/types/user_type.rb:1:in `<top (required)>'
+  app/graph/types/query_type.rb:5:in `block in <top (required)>'
+  app/graph/types/query_type.rb:1:in `<top (required)>'
+  app/graph/schema.rb:1:in `<top (required)>'
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.9ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:48:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionController::RoutingError (uninitialized constant FetchField):
+  app/graph/types/query_type.rb:5:in `block in <top (required)>'
+  app/graph/types/query_type.rb:1:in `<top (required)>'
+  app/graph/schema.rb:1:in `<top (required)>'
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.2ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 10:49:26 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Must construct Source with a string like object.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.6ms)
+
+
+Started POST "/queries?query=%22foo%22" for ::1 at 2015-12-10 10:49:49 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"\"foo\""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.9ms)
+
+
+Started POST "/queries?query=%22foo%22&variables=%22bar%22" for ::1 at 2015-12-10 10:50:14 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"\"foo\"", "variables"=>"\"bar\""}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/queries?query=%22query%20getUser%20{%20user(email:%20%27dphaener@gmail.com%27)%20{%20id,%20email%20}%20}%22" for ::1 at 2015-12-10 11:06:12 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"\"query getUser { user(email: 'dphaener@gmail.com') { id, email } }\""}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.5ms)
+
+
+Started POST "/queries?query=%22query%20getUser%20{%20user(id:%201)%20{%20id,%20email%20}%20}%22" for ::1 at 2015-12-10 11:08:20 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"\"query getUser { user(id: 1) { id, email } }\""}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/queries?query=%22query%20getUser%20{%20user(id:%201)%20{%20email%20}%20}%22" for ::1 at 2015-12-10 11:09:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"\"query getUser { user(id: 1) { email } }\""}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.9ms)
+
+
+Started POST "/queries?query=query%20getUser%20%7B%20user(id%3A%201)%20%7B%20email%2C%20id%20%7D%20%7D" for ::1 at 2015-12-10 11:11:04 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query getUser { user(id: 1) { email, id } }"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 23ms (Views: 1.2ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/queries?query=query%20getUser%20{%20user(id:%201)%20{%20email,%20id%20}%20}" for ::1 at 2015-12-10 11:11:30 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query getUser { user(id: 1) { email, id } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+
+
+Started POST "/queries?query=query%20getUser%20{%20user(email:%20%22dphaener@gmail.com%22)%20{%20email,%20id%20}%20}" for ::1 at 2015-12-10 11:14:15 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query getUser { user(email: \"dphaener@gmail.com\") { email, id } }"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 25ms (Views: 1.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/queries?query=query%20getUser%20{%20user(email:%20%22dphaener1@gmail.com%22)%20{%20email,%20id%20}%20}" for ::1 at 2015-12-10 11:14:22 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query getUser { user(email: \"dphaener1@gmail.com\") { email, id } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener1@gmail.com"]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20getUser%20{%20user(email:%20%22dphaener@gmail.com%22)%20{%20email,%20id%20}%20}" for ::1 at 2015-12-10 11:14:26 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query getUser { user(email: \"dphaener@gmail.com\") { email, id } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+
+
+Started POST "/query" for ::1 at 2015-12-10 17:55:38 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [POST] "/query"):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:52:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.0ms)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started POST "/query" for ::1 at 2015-12-10 17:56:46 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [POST] "/query"):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:52:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.8ms)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started POST "/query" for ::1 at 2015-12-10 18:01:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [POST] "/query"):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:52:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.3ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 18:01:58 -0800
+Processing by QueriesController#create as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Must construct Source with a string like object.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.2ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 18:03:48 -0800
+Processing by QueriesController#create as */*
+#<ActionController::Parameters:0x007f93221a0358>
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Must construct Source with a string like object.):
+  app/controllers/queries_controller.rb:6:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.7ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-10 18:04:10 -0800
+Processing by QueriesController#create as */*
+{"controller"=>"queries", "action"=>"create"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (Must construct Source with a string like object.):
+  app/controllers/queries_controller.rb:6:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.3ms)
+
+
+Started POST "/queries?query=query%20{%27,%20%20%20%20%20%20%20%20authenticateUser%20{%20%20%20%20%20%20%20%20%20%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20%20%20%20%20%20%20%20%20%20%20%20token%20%20%20%20%20%20%20%20%20%20}%20%20%20%20%20%20%20%20}%20%20%20%20%20%20}%27}" for ::1 at 2015-12-10 18:05:04 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query {',        authenticateUser {          auth(email: \"dphaener@gmail.com\", password: \"marley12\") {            token          }        }      }'}"}
+{"controller"=>"queries", "action"=>"create"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:6:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.5ms)
+
+
+Started POST "/queries?query=query%20{,%20%20%20%20%20%20%20%20authenticateUser%20{%20%20%20%20%20%20%20%20%20%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20%20%20%20%20%20%20%20%20%20%20%20token%20%20%20%20%20%20%20%20%20%20}%20%20%20%20%20%20%20%20}%20%20%20%20%20%20}" for ::1 at 2015-12-10 18:06:19 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query {,        authenticateUser {          auth(email: \"dphaener@gmail.com\", password: \"marley12\") {            token          }        }      }"}
+{"controller"=>"queries", "action"=>"create"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:6:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.7ms)
+
+
+Started POST "/queries?query=query%20{,authenticateUser%20{%20%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20%20%20%20token%20%20}}}" for ::1 at 2015-12-10 18:07:14 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query {,authenticateUser {  auth(email: \"dphaener@gmail.com\", password: \"marley12\") {    token  }}}"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+GraphQL::ParseError (Extra input after last repetition at line 1 char 1.):
+  app/controllers/queries_controller.rb:5:in `create'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.3ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:08:30 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:09:01 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:26:01 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:27:24 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:27:34 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:27:49 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20{%20authenticateUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}%20}" for ::1 at 2015-12-10 18:28:05 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query { authenticateUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } } }"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:29:04 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 88ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:32:47 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 73ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:33:08 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:33:23 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 76ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:33:34 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 74ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:44:35 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 77ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:46:03 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 72ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:46:45 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 77ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:47:49 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:47:51 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 73ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:47:52 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 18:48:56 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 21:16:35 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-10 21:17:14 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-11 11:18:22 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (35.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 132ms (Views: 1.4ms | ActiveRecord: 35.8ms)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-11 11:18:58 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started POST "/queries?query=query%20authUser%20{%20auth(email:%20%22dphaener@gmail.com%22,%20password:%20%22marley12%22)%20{%20token%20}%20}" for ::1 at 2015-12-12 11:44:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query authUser { auth(email: \"dphaener@gmail.com\", password: \"marley12\") { token } }"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "dphaener@gmail.com"]]
+Completed 200 OK in 130ms (Views: 1.4ms | ActiveRecord: 23.7ms)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/graphql" for ::1 at 2015-12-14 08:44:20 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/graphql"):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:52:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.4ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.5ms)
+
+
+Started GET "/queries" for ::1 at 2015-12-14 08:45:06 -0800
+
+AbstractController::ActionNotFound (The action 'index' could not be found for QueriesController):
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/abstract_controller/base.rb:123:in `process'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_controller/metal.rb:192:in `dispatch'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_controller/metal.rb:264:in `dispatch'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:48:in `dispatch'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:42:in `block in serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `each'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/journey/router.rb:29:in `serve'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/routing/route_set.rb:713:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionview/lib/action_view/digestor.rb:14:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/etag.rb:25:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/conditional_get.rb:25:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/head.rb:12:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/query_cache.rb:36:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb:963:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activerecord/lib/active_record/migration.rb:498:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:743:in `_run_call_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/callbacks.rb:90:in `run_callbacks'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/debug_exceptions.rb:48:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:42:in `call_app'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `block in call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:26:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/tagged_logging.rb:70:in `tagged'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/rack/logger.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/runtime.rb:22:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/static.rb:132:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/sendfile.rb:111:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/railties/lib/rails/engine.rb:522:in `call'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rack-c393176b0edf/lib/rack/handler/webrick.rb:86:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails-8bdbf88dfd23/actionpack/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/queries" for 127.0.0.1 at 2015-12-14 08:46:25 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 43ms (Views: 1.7ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/queries" for 127.0.0.1 at 2015-12-14 08:46:35 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for 127.0.0.1 at 2015-12-14 08:49:15 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:22:34 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:22:39 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:25:04 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:25:50 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:1){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:29:46 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:\"1\"){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 2.4ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:31:06 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:\"1\"){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:31:57 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:\"1\"){id,...__RelayQueryFragment0b77xzo}} fragment __RelayQueryFragment0b77xzo on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:33:17 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:\"1\"){id,...__RelayQueryFragment0vcqnyg}} fragment __RelayQueryFragment0vcqnyg on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:33:34 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:\"1\"){id,...__RelayQueryFragment0vcqnyg}} fragment __RelayQueryFragment0vcqnyg on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 09:33:48 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query Users_query{user(id:\"1\"){id,...__RelayQueryFragment0vcqnyg}} fragment __RelayQueryFragment0vcqnyg on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+
+
+Started POST "/queries" for ::1 at 2015-12-14 10:59:21 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment07e1p4j on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 10:59:49 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment07e1p4j on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 11:02:07 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment07e1p4j on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 11:02:27 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"2\"){id,...__RelayQueryFragment06wnktm}} fragment __RelayQueryFragment06wnktm on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-14 11:02:32 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment07e1p4j on User{email,token,id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1763980054046831985);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTodos (20151215032808)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE TABLE "todos" ("id" serial primary key, "description" character varying, "completed" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (6.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151215032808"]]
+  [1m[35m (69.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1763980054046831985)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'todos'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1763980054046831985);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTodos (20151215032808)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.9ms)[0m  [1m[35mDROP TABLE "todos"[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20151215032808"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1763980054046831985)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1763980054046831985);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTodos (20151215032918)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1763980054046831985)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1763980054046831985);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTodos (20151215033031)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "todos" ("id" serial primary key, "user_id" integer, "description" character varying, "completed" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+) [0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_todos_on_user_id" ON "todos"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151215033031"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1763980054046831985)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'todos'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["description", "Buy milk"], ["completed", false], ["created_at", 2015-12-15 03:37:05 UTC], ["updated_at", 2015-12-15 03:37:05 UTC]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["description", "Buy bread"], ["completed", true], ["created_at", 2015-12-15 03:37:14 UTC], ["updated_at", 2015-12-15 03:37:14 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:36:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 85ms (Views: 1.6ms | ActiveRecord: 12.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:36:56 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:37:40 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:38:32 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:38:46 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 36ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:39:05 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:39:29 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:40:01 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:40:12 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:40:38 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:41:58 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:42:13 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:42:29 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:43:20 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:43:34 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:43:43 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:43:51 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:51:35 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:51:45 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:51:51 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:51:59 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:52:18 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"2\"){id,...__RelayQueryFragment06wnktm}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment06wnktm on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:52:24 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:54:02 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:54:41 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:55:16 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:59:51 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 09:59:54 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:15:30 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:16:56 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:16:59 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:20:02 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:20:13 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:20:17 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:22:18 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE "todos" ("id" serial primary key, "user_id" integer, "description" character varying, "completed" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_todos_on_user_id" ON "todos" USING btree ("user_id")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "todos" ADD CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20151215033031')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20151210181533')[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE "todos" CASCADE[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "todos" ("id" serial primary key, "user_id" integer, "description" character varying, "completed" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_todos_on_user_id" ON "todos" USING btree ("user_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "users" CASCADE[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "todos" ADD CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3243419815343292060);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3243419815343292060)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'todos'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:30:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 41ms (Views: 1.4ms | ActiveRecord: 3.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dphaener@gmail.com"], ["password_digest", "$2a$10$Xu/RC86cE7tVm5AE8DEbJ.6bKII/KnIY/.9FxUJwrkdPdH/8nsDSW"], ["created_at", 2015-12-15 18:31:12 UTC], ["updated_at", 2015-12-15 18:31:12 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["description", "Buy milk"], ["completed", true], ["created_at", 2015-12-15 18:31:28 UTC], ["updated_at", 2015-12-15 18:31:28 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dphaener@gmail.com"], ["password_digest", "$2a$10$rFSFBDBB2ZeAnK6bfqK.AOq72d.bwndAZFuwbbVHD156hQK0Fqr1y"], ["created_at", 2015-12-15 18:32:50 UTC], ["updated_at", 2015-12-15 18:32:50 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["description", "Buy Milk"], ["completed", true], ["created_at", 2015-12-15 18:32:50 UTC], ["updated_at", 2015-12-15 18:32:50 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["description", "Buy Cheese"], ["completed", false], ["created_at", 2015-12-15 18:32:50 UTC], ["updated_at", 2015-12-15 18:32:50 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:32:53 -0800
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "todos" ("id" serial primary key, "user_id" integer, "description" character varying, "completed" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_todos_on_user_id" ON "todos" USING btree ("user_id")[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "todos" ADD CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20151215033031')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20151210181533')[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "todos" CASCADE[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "todos" ("id" serial primary key, "user_id" integer, "description" character varying, "completed" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_todos_on_user_id" ON "todos" USING btree ("user_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "users" CASCADE[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "todos" ADD CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dphaener@gmail.com"], ["password_digest", "$2a$10$k1oBTWEjtD.IB5FxuQYFzeKBwY2CQWb/A5KMbhbMWOglyHnLKvmBy"], ["created_at", 2015-12-15 18:33:45 UTC], ["updated_at", 2015-12-15 18:33:45 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["description", "Buy Milk"], ["completed", true], ["created_at", 2015-12-15 18:33:45 UTC], ["updated_at", 2015-12-15 18:33:45 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["description", "Buy Cheese"], ["completed", false], ["created_at", 2015-12-15 18:33:45 UTC], ["updated_at", 2015-12-15 18:33:45 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dphaener@gmail.com"], ["password_digest", "$2a$10$aOsaNkVKsTcSb4Vr8nbSyOovSJ1nUgvUsdcbYL7eWrCIT6DmBALX."], ["created_at", 2015-12-15 18:33:50 UTC], ["updated_at", 2015-12-15 18:33:50 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["description", "Buy Milk"], ["completed", true], ["created_at", 2015-12-15 18:33:50 UTC], ["updated_at", 2015-12-15 18:33:50 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("user_id", "description", "completed", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["description", "Buy Cheese"], ["completed", false], ["created_at", 2015-12-15 18:33:50 UTC], ["updated_at", 2015-12-15 18:33:50 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+. (called from block in tsort_each at /Users/darinhaener/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started POST "/queries" for ::1 at 2015-12-15 10:34:01 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QueriesController#create as */*
+  Parameters: {"query"=>"query User_query{user(id:\"1\"){id,...__RelayQueryFragment07e1p4j}} fragment __RelayQueryFragment1i52mls on Todo{description,completed,id} fragment __RelayQueryFragment07e1p4j on User{email,token,todos{id,...__RelayQueryFragment1i52mls},id}", "variables"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+Completed 200 OK in 63ms (Views: 1.2ms | ActiveRecord: 5.4ms)
